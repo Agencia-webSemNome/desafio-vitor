@@ -34,7 +34,7 @@ main {
 }
 
 .img {
-  background-image: url('/Desafio_N°1/img/image-product-mobile.jpg');
+  background-image: url('/desafio-vitor/Desafio_N°1/img/image-product-mobile.jpg');
   background-position: bottom;
   background-size: cover;
   width: 100%;
@@ -127,7 +127,7 @@ main {
     }
 
     .img {
-        background-image: url('/Desafio_N°1/img/image-product-mobile.jpg');  
+        background-image: url('/desafio-vitor/Desafio_N°1/img/image-product-desktop.jpg');  
         background-size: cover;
         width: 280px;
         height: auto;
