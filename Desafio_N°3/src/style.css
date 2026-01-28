@@ -65,7 +65,7 @@ header{
 }
 
 .dark-theme-img{
-    background-image: url(/img/icon-sun.svg);
+    background-image: url(/desafio-vitor/Desafio_N°3/img/icon-sun.svg);
     background-repeat:no-repeat;
     width: 22px;
     height: 22px;
@@ -137,10 +137,59 @@ article button{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: auto;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #3a3a3a;
+  border-radius: 60px;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  top: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.switch input:checked + .slider {
+  background-color: #ff5c5c; 
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+button:hover{
+    border: 1px solid #ff5c5c;
+}
+
+
 @media (min-width:768px){
+
     nav{
     flex-direction: row;
     justify-content: space-between;
@@ -158,12 +207,18 @@ article button{
 }
 
 
-@media (min-width:1400px) {
-    main{
+@media (min-width:1440px) {
+    main {
         margin: 2rem 0 3rem 0;
     }
 
-    section{
-        grid-template-columns: repeat(3,1fr);
+    section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-height:1080px) {
+        main {
+            height: 100vh;
+        }
     }
 }
