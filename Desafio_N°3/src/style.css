@@ -113,6 +113,7 @@ article{
 
 article img{
     width: 64px;
+    height: 64px;
     margin-bottom: auto;
 }
 
@@ -124,7 +125,6 @@ article button{
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin-top: auto;
 }
 
 .container-column{
