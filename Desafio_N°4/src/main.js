@@ -69,7 +69,7 @@ form.addEventListener("submit", (e) => {
   if (!textarea.value.trim()) {
     e.preventDefault();
     textarea.classList.add("required-element");
-    let erro = findError("textarea-error");
+    let erro = document.getElementById("textarea-error");
     erro.textContent = textarea.dataset.required;
   }
 
